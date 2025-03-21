@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Must Visits in Tokyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 200vh; /* Enables scrolling */
+        }
+
+        /* Envelope (Container) */
+        .envelope {
+            display:block;
+            background-color: rgb(204, 201, 201);
+
+            position: relative; /* Acts as a reference for children to use absolute position */
+        }
+
+
+        .fixed-box {
+            position: fixed;
+            width: 100%; /* Out-of-flow: so 20% will mean 20% of the envelope  */      
+            top: 0; /* Out-of-flow: positioned according to the viewport */  
+            height: 15%;
+            padding-left: 1em;
+            padding-top: 1em;
+            font-family: "Boldonse", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(147, 59, 59);
+            font-size: 30px;
+            background-color: rgb(255, 255, 255);
+            z-index: 1000;
+        }
+
+        .sticky-box1 {
+            /* Sticky: Acts like relative, fixed, but also needs a parent container */
+            position: sticky; /* By default, is relative until its parent container crosses the threshold and becomes "stuck" */ 
+            /* Here it is specified by top; the element becomes "unstuck" when this element reaches the end of its parent container */
+            top: 100px; /* Defined against the viewport */
+            height: 25vh;
+            font-family: "Boldonse", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            background-color: rgb(155, 75, 75);
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+        .sticky-box2 {
+            /* Sticky: Acts like relative, fixed, but also needs a parent container */
+            position: sticky; /* By default, is relative until its parent container crosses the threshold and becomes "stuck" */ 
+            /* Here it is specified by top; the element becomes "unstuck" when this element reaches the end of its parent container */
+            top: 100px; /* Defined against the viewport */
+            height: 20vh;
+            font-family: "Boldonse", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            background-color: rgb(75, 108, 155);
+            z-index: 1000;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        .sticky-box3 {
+            /* Sticky: Acts like relative, fixed, but also needs a parent container */
+            position: sticky; /* By default, is relative until its parent container crosses the threshold and becomes "stuck" */ 
+            /* Here it is specified by top; the element becomes "unstuck" when this element reaches the end of its parent container */
+            top: 100px; /* Defined against the viewport */
+            height: 20vh;
+            font-family: "Boldonse", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            background-color: rgb(75, 155, 131);
+            z-index: 1000;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        .sticky-box4 {
+            /* Sticky: Acts like relative, fixed, but also needs a parent container */
+            position: sticky; /* By default, is relative until its parent container crosses the threshold and becomes "stuck" */ 
+            /* Here it is specified by top; the element becomes "unstuck" when this element reaches the end of its parent container */
+            top: 100px; /* Defined against the viewport */
+            height: 20vh;
+            font-family: "Boldonse", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            background-color: rgb(155, 94, 75);
+            z-index: 1000;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+        /* Spacing for scroll effect */
+        .spacer {
+            height: 10vh; /* Forces more scrolling */
+            
+        }
+
+        a {
+            display: flex;
+            margin-top: 3em;
+            height: 30%;
+            align-content:center;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(116, 56, 56);
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: rgb(203, 203, 203);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="spacer"></div> <!-- Extra space to allow scrolling -->
+
+    <div class="envelope">
+
+        <div class="column fixed-box"> Make TOKYO your HOME</div>
+        
+        <div class="sticky-box1">
+            Toyosu Senkyaku Banrai is a new facility that aims to carry on and further develop the unique excitement of Tsukiji. 
+            In collaboration with Toyosu Market, this destination will offer invigorating, exciting times unique to Toyosu.
+      
+        <a href="https://www.toyosu-senkyakubanrai.jp/languages/en/" target="_blank">SENKYAKU BANRAI</a>
+    </div>
+
+        <div class="spacer"></div> <!-- To force the envelope to scroll -->
+
+        <div class="sticky-box2">
+            Asakusa is the center of Tokyo's shitamachi,
+             one of Tokyo's districts, where an atmosphere of the Tokyo of past decades survives.
+
+            <a href="https://www.japan-guide.com/e/e3004.html" target="_blank">ASAKUSA</a>
+        </div>
+
+        <div class="spacer"></div> <!-- To force the envelope to scroll -->
+
+        <div class="sticky-box3">
+            Tokyo Sky Tree is also the world's tallest freestanding tower, and it exceeds the height of Tokyo Tower, 
+            previously the city's tallest structure, by 988 feet (301 metres).
+
+            <a href="https://www.tokyo-skytree.jp/en/" target="_blank">TOKYO SKYTREE</a>
+        </div>
+        <div class="spacer"></div> <!-- To force the envelope to scroll -->
+        <div class="sticky-box4">
+            Shibuya Sky is a 229-meter-tall , open-air observation deck that offers a breathtaking view of Tokyo.
+
+        <a href="https://www.shibuya-scramble-square.com.e.apy.hp.transer.com/sky/" target="_blank">SHIBUYA SKY</a>
+    </div>
+
+        <div class="spacer"></div> <!-- To force the envelope to scroll -->
+
+    </div>
+
+</body>
+</html>
